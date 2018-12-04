@@ -19,6 +19,7 @@
 		A3A1E7C721B66FFA00CC862D /* GAIDictionaryBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = A3A1E7BD21B66FFA00CC862D /* GAIDictionaryBuilder.h */; };
 		A3A1E7C821B66FFA00CC862D /* GAITracker.h in Headers */ = {isa = PBXBuildFile; fileRef = A3A1E7BE21B66FFA00CC862D /* GAITracker.h */; };
 		A3A1E7CB21B688EB00CC862D /* GAWrapper.podspec in Resources */ = {isa = PBXBuildFile; fileRef = A3A1E7CA21B688EB00CC862D /* GAWrapper.podspec */; };
+		A3A1E7CD21B68D6300CC862D /* LICENSE.md in Resources */ = {isa = PBXBuildFile; fileRef = A3A1E7CC21B68D6300CC862D /* LICENSE.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		A3A1E7BE21B66FFA00CC862D /* GAITracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAITracker.h; sourceTree = "<group>"; };
 		A3A1E7C921B6701B00CC862D /* GAWrapper.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = GAWrapper.modulemap; sourceTree = "<group>"; };
 		A3A1E7CA21B688EB00CC862D /* GAWrapper.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GAWrapper.podspec; sourceTree = "<group>"; };
+		A3A1E7CC21B68D6300CC862D /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				A3A1E7CA21B688EB00CC862D /* GAWrapper.podspec */,
+				A3A1E7CC21B68D6300CC862D /* LICENSE.md */,
 				A3A1E7AC21B66F6900CC862D /* GAWrapper */,
 				A3A1E7AB21B66F6900CC862D /* Products */,
 			);
@@ -165,6 +168,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3A1E7CD21B68D6300CC862D /* LICENSE.md in Resources */,
 				A3A1E7CB21B688EB00CC862D /* GAWrapper.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
