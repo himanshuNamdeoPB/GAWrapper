@@ -20,6 +20,8 @@
 		A3A1E7C821B66FFA00CC862D /* GAITracker.h in Headers */ = {isa = PBXBuildFile; fileRef = A3A1E7BE21B66FFA00CC862D /* GAITracker.h */; };
 		A3A1E7CB21B688EB00CC862D /* GAWrapper.podspec in Resources */ = {isa = PBXBuildFile; fileRef = A3A1E7CA21B688EB00CC862D /* GAWrapper.podspec */; };
 		A3A1E7CD21B68D6300CC862D /* LICENSE.md in Resources */ = {isa = PBXBuildFile; fileRef = A3A1E7CC21B68D6300CC862D /* LICENSE.md */; };
+		A3CCD46F21BA5496005B0755 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A3CCD46E21BA5496005B0755 /* libsqlite3.dylib */; };
+		A3CCD47121BA5513005B0755 /* libz.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A3CCD47021BA5513005B0755 /* libz.1.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +41,10 @@
 		A3A1E7C921B6701B00CC862D /* GAWrapper.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = GAWrapper.modulemap; sourceTree = "<group>"; };
 		A3A1E7CA21B688EB00CC862D /* GAWrapper.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GAWrapper.podspec; sourceTree = "<group>"; };
 		A3A1E7CC21B68D6300CC862D /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
+		A3CCD46A21BA5340005B0755 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		A3CCD46C21BA53C6005B0755 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		A3CCD46E21BA5496005B0755 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = ../../../../../usr/lib/libsqlite3.dylib; sourceTree = "<group>"; };
+		A3CCD47021BA5513005B0755 /* libz.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.dylib; path = ../../../../../usr/lib/libz.1.dylib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +52,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3CCD47121BA5513005B0755 /* libz.1.dylib in Frameworks */,
+				A3CCD46F21BA5496005B0755 /* libsqlite3.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +67,7 @@
 				A3A1E7CC21B68D6300CC862D /* LICENSE.md */,
 				A3A1E7AC21B66F6900CC862D /* GAWrapper */,
 				A3A1E7AB21B66F6900CC862D /* Products */,
+				A3CCD46921BA5340005B0755 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,6 +82,7 @@
 		A3A1E7AC21B66F6900CC862D /* GAWrapper */ = {
 			isa = PBXGroup;
 			children = (
+				A3E4AC3521BA4DDC00AE112A /* Libraries */,
 				A3A1E7BB21B66FFA00CC862D /* GAI.h */,
 				A3A1E7BD21B66FFA00CC862D /* GAIDictionaryBuilder.h */,
 				A3A1E7B621B66FF900CC862D /* GAIEcommerceFields.h */,
@@ -88,6 +98,24 @@
 				A3A1E7C921B6701B00CC862D /* GAWrapper.modulemap */,
 			);
 			path = GAWrapper;
+			sourceTree = "<group>";
+		};
+		A3CCD46921BA5340005B0755 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A3CCD47021BA5513005B0755 /* libz.1.dylib */,
+				A3CCD46E21BA5496005B0755 /* libsqlite3.dylib */,
+				A3CCD46C21BA53C6005B0755 /* libsqlite3.tbd */,
+				A3CCD46A21BA5340005B0755 /* libsqlite3.0.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A3E4AC3521BA4DDC00AE112A /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Libraries;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -324,6 +352,10 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GAWrapper/Libraries",
+				);
 				MODULEMAP_FILE = GAWrapper/GAWrapper.modulemap;
 				PRODUCT_BUNDLE_IDENTIFIER = PB.GAWrapper;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -350,6 +382,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GAWrapper/Libraries",
 				);
 				MODULEMAP_FILE = GAWrapper/GAWrapper.modulemap;
 				PRODUCT_BUNDLE_IDENTIFIER = PB.GAWrapper;
