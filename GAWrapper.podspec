@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
 s.platform = :ios
-s.ios.deployment_target = '10.0'
+#s.ios.deployment_target = '10.0'
 s.name = "GAWrapper"
 s.summary = "Google Analytics Wrapper"
 s.requires_arc = true
