@@ -6,7 +6,7 @@ s.ios.deployment_target = '10.0'
 s.name = "GAWrapper"
 s.summary = "Google Analytics Wrapper"
 s.requires_arc = true
-s.version = "0.0.3"
+s.version = "0.0.4"
 s.license = { :type => "MIT", :file => "LICENSE" }
 
 s.author = { "Himanshu Namdeo" => "himanshu.namdeo@pb.com" }
