@@ -6,7 +6,7 @@ s.platform = :ios
 s.name = "GAWrapper"
 s.summary = "Google Analytics Wrapper"
 s.requires_arc = true
-s.version = "0.0.4"
+s.version = "0.0.5"
 s.license = { :type => "MIT", :file => "LICENSE" }
 
 s.author = { "Himanshu Namdeo" => "himanshu.namdeo@pb.com" }
